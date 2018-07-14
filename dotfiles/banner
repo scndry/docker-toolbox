@@ -1,0 +1,13 @@
+cl=$(tput setab 7)$(tput setaf 7)
+rs=$(tput sgr0)
+cat << EOBANNER
+
+  ${cl}███${rs}╗
+  ╚═${cl}███${rs}╗
+    ╚═${cl}███${rs}╗        :: Docker Toolbox ::
+    ${cl}███${rs}╔═╝
+  ${cl}███${rs}╔═╝ ${cl}██████████${rs}╗
+  ╚══╝   ╚═════════╝
+
+EOBANNER
+

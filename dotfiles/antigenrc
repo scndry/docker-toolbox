@@ -1,0 +1,15 @@
+antigen use oh-my-zsh
+
+antigen bundle git
+antigen bundle history
+antigen bundle httpie
+antigen bundle common-aliases
+
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-history-substring-search
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+antigen theme candy
+
+antigen apply
+

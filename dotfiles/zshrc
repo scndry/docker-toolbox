@@ -1,0 +1,5 @@
+source $HOME/.dotfiles/banner
+source $HOME/.antigen/antigen.zsh && antigen init $HOME/.dotfiles/antigenrc
+
+alias vi=vim
+
