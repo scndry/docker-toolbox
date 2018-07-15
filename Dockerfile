@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 RUN apk update \
- && apk add --no-cache busybox-extras ncurses zsh zsh-vcs fortune vim grep git tree htop curl httpie \
+ && apk add --no-cache busybox-extras ncurses zsh zsh-vcs fortune vim grep git tree htop curl httpie jq \
  && rm -rf /var/cache/apk/* \
  && sed -i -e "s/bin\/ash/bin\/zsh/" /etc/passwd
 
@@ -19,5 +19,5 @@ RUN ln -s $HOME/.dotfiles/zshrc .zshrc \
  && /bin/zsh -c "source .antigen/antigen.zsh && antigen init .dotfiles/antigenrc" \
  && vim --not-a-term +"PlugInstall --sync" +qa
 
-ENTRYPOINT /bin/zsh
+CMD /bin/zsh
 
